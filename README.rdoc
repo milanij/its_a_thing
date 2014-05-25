@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app for a website called "it's a thing."
 
-Things you may want to cover:
+This is a joke/passion project for a friend.
 
-* Ruby version
+Currently the app has full CRUD functionality, but it needs user and sessions control.
 
-* System dependencies
+To Do:
 
-* Configuration
+* User/Session Controllers
 
-* Database creation
+* Better and more complete styling
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* deploy to Heroku
