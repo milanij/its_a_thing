@@ -1,0 +1,9 @@
+<div class="well well-md">
+    <%= form_for @thing do |t| %>
+            Thing: <%= t.text_field :name, class: "form-control" %>
+            Date: <%= t.text_field :date, class: "form-control" %>
+            Description: <%= t.text_field :description, class: "form-control" %>
+            Is it a thing? <%= t.check_box :thingness, class: "form-control" %>
+            <%= t.submit %>
+        <% end %>
+</div>

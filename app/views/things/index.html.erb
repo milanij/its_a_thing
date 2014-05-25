@@ -1,0 +1,39 @@
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="well well-md">
+                <h2>It's a Thing</h2>
+                        <% @things.reverse.each do |t| %>
+                            <% if t.thingness == true %>
+                                <%= link_to t.name, thing_path(t) %>
+                                <%= t.date %>
+                                <%= t.description %>
+                                <br>
+                            <% end %>    
+                        <% end %>
+                </div>
+            </div>
+                <div class="col-md-6">
+                <div class="well well-md">        
+                <h2>It's Not a Thing</h2>
+                        <% @things.reverse.each do |t| %>
+                            <% if t.thingness == false %>
+                                <%= link_to t.name, thing_path(t) %>
+                                <%= t.date %>
+                                <%= t.description %>
+                                <br>
+                            <% end %>
+                        <% end %>
+            </div>
+                </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+<br>
+<br>
+<%= link_to "Make a New Thing", new_thing_path, class: "btn btn-info" %>
+
+
+
+
+

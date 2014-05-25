@@ -1,0 +1,13 @@
+<div class="col-md-4"></div>
+    <div class="col-md-4">
+    <div class="well well-lg">
+        <h1><%= @thing.name %></h1>
+            <p><strong>Date:</strong> <%= @thing.date %></p>
+            <p><strong>Description:</strong> <%= @thing.description %></p>
+
+        <%= link_to "Edit this Thing", edit_thing_path(@thing), class: "btn btn-info" %>
+        <br>
+        <%= link_to "Remove This Thing", {:action => 'destroy'}, :method => :delete, class: "btn btn-warning", confirm: "Really take this Thing off the list?" %>
+    </div>
+</div>
+<div class="col-md-4"></div>
